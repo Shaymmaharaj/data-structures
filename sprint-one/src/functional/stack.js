@@ -9,14 +9,18 @@ var Stack = function() {
   // Implement the methods below
   someInstance.push = function(value) {
     // 
-    num++
+    
     storage[num] = value 
+    num++
   
 };
 
   someInstance.pop = function() {
   
-    
+    var key  = Object.keys(storage)
+      
+  
+    delete storage[key.length -1]
 
   };
 
