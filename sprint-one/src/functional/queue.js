@@ -18,6 +18,7 @@ var Queue = function() {
       
   
     delete storage[key.length -1]
+    storage
   };
 
   someInstance.size = function() {
