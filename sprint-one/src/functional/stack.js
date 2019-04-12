@@ -9,18 +9,22 @@
   // Implement the methods below
   someInstance.push = function(value) {
     // 
-    
-    storage[num] = value 
-    num++
+    var len = Object.keys(storage).length
+    storage[len] = value 
+    len++
   
 };
 
   someInstance.pop = function() {
   
-    var key  = Object.keys(storage)
-      
-  
-    delete storage[key.length -1]
+    var key  = Object.keys(storage).length - 1 
+    var  value = storage[key]
+    // if(key === 0 ){
+    //   return 
+    // }
+    delete storage[key]
+    
+    return value
 
   };
 
@@ -28,6 +32,5 @@
     return Object.keys(storage).length
     
   };
-  console.log(someInstance)
   return someInstance;
 };

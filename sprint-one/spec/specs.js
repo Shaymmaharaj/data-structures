@@ -65,6 +65,7 @@ define([
       it('allows sequentially additing and removing items', function() {
         stack.push('a');
         expect(stack.pop()).to.equal('a');
+        console.log(stack)
         stack.push('b');
         expect(stack.pop()).to.equal('b');
       });
